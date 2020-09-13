@@ -9,10 +9,13 @@ from datetime import datetime
 IMG_SIZE = "354x255"
 TYPE = "property_image"
 
+# Change this
+API_URL = 'https://my-json-server.typicode.com/sunny-mittal/py-ex/listings/'
+
 
 def get_uri(listing_id):
     """This would be replaced with your api, of course but this service is pretty rad and let me create a fake API with your real data"""
-    return f'https://my-json-server.typicode.com/sunny-mittal/py-ex/listings/{listing_id}'
+    return f'{API_URL}/{listing_id}'
 
 
 def extract_fields(json):
